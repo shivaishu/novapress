@@ -1,0 +1,68 @@
+:root {
+  --sans: 'DM Sans', Arial, sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+}
+
+body { font-family: var(--sans); }
+.pulse-shell { max-width: 1520px; }
+.pulse-topline { font-size: 10px; letter-spacing: .07em; }
+.pulse-nav-item { font-size: 12px; }
+.pulse-kicker { font-size: 9px; }
+.pulse-section-heading h1 { font-size: clamp(36px, 3.2vw, 45px); }
+.breaking-lead-copy small, .tile-copy small, .feed-story-meta { font-size: 10px; }
+.breaking-lead-copy > b { line-height: 1.15; }
+.breaking-lead-copy > span { font-size: 13px; }
+.breaking-lead-copy > strong, .tile-copy strong { font-size: 10px; }
+.tile-copy b { font-size: 17px; line-height: 1.28; }
+.tile-copy > span { font-size: 11px; line-height: 1.55; }
+.pulse-section-heading h2 { font-size: clamp(27px, 2.5vw, 34px); }
+.feed-story { grid-template-columns: minmax(190px, 30%) 1fr; gap: 20px; padding: 19px 0; }
+.feed-story-image { height: 158px; }
+.feed-story-title { font-size: clamp(19px, 1.8vw, 23px); line-height: 1.25; }
+.feed-story-copy > p { font-size: 13px; line-height: 1.65; }
+.feed-story-bottom { font-size: 11px; gap: 15px; }
+.feed-story-bottom > button.feed-like { margin: 0; padding: 5px; color: #747180; border-radius: 5px; font-size: 11px; }
+.feed-story-bottom > button.feed-like:hover, .feed-story-bottom > button.feed-like.chosen { color: #c44770; background: #fff0f4; }
+.feed-story-bottom > button.feed-read-link { margin-left: auto; font-size: 11px; white-space: nowrap; }
+.pulse-view-all, .feed-filter { font-size: 11px; }
+.side-title h3 { font-size: 17px; }
+.trending-story b { font-size: 14px; line-height: 1.35; }
+.signin-form-wrap { width: min(100%, 420px); }
+.signin-form-wrap > .pulse-kicker { font-size: 10px; }
+.signin-form-wrap h2 { font-size: 38px; }
+.signin-form-wrap > p { font-size: 14px; }
+.social-signin { min-height: 50px; font-size: 14px; }
+.signin-divider { font-size: 11px; }
+.signin-form { gap: 16px; }
+.signin-form label { gap: 8px; font-size: 13px; }
+.signin-form input { height: 48px; padding: 0 14px; font-size: 14px; }
+.signin-form .auth-submit { min-height: 50px; font-size: 14px; }
+.signin-forgot, .signin-form-wrap .auth-switch { font-size: 12px; }
+.signin-form-wrap .auth-legal { font-size: 10px; }
+.signin-setup-note { font-size: 10px; }
+.auth-submit:disabled { opacity: .7; cursor: wait; }
+.article-prose { font-family: Georgia, 'Times New Roman', serif; font-size: 18px; line-height: 1.85; }
+.modal-deck { font-size: 16px; }
+.reaction-bar { font-size: 12px; }
+.react-button { font-size: 12px; padding: 10px 12px; }
+
+@media (max-width: 760px) {
+  .feed-story { grid-template-columns: 160px minmax(0, 1fr); gap: 14px; }
+  .feed-story-image { height: 132px; }
+  .feed-story-copy > p { font-size: 12px; }
+  .feed-story-bottom { gap: 9px; font-size: 10px; }
+  .breaking-lead-copy > span { font-size: 12px; }
+}
+@media (max-width: 500px) {
+  .feed-story { grid-template-columns: 112px minmax(0, 1fr); gap: 11px; }
+  .feed-story-image { height: 108px; }
+  .feed-story-title { font-size: 17px; }
+  .feed-story-copy > p { display: none; }
+  .feed-story-meta { font-size: 9px; gap: 4px; }
+  .feed-story-bottom { gap: 7px; font-size: 10px; }
+  .feed-story-bottom > span:first-child { display: none; }
+  .feed-story-bottom > button.feed-read-link { font-size: 0; gap: 0; }
+  .feed-story-bottom > button.feed-read-link svg { width: 16px; }
+  .pulse-topline { font-size: 9px; }
+  .signin-form-wrap h2 { font-size: 31px; }
+}
